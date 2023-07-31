@@ -1,0 +1,101 @@
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #121214;
+}
+.page{
+  max-width: 1440px;
+  max-height: 100vh;
+  padding: 0px 100px;
+  margin: auto;
+  
+  font-family: 'Mulish', sans-serif;
+  color: white;
+}
+
+header h1{
+  color: #02799D;
+  font-family: 'Mulish';
+  color: #02799D;
+  font-size: 58px;
+  font-style: normal;
+  font-weight: 900; 
+  text-shadow: 3px 5px 20px #0b708f;
+}
+header{
+  padding: 50px 0px 60px;
+}
+
+header h2{
+  font-size: 32px;
+  font-weight: 600;
+  text-shadow: 2px 2px 13px #fff;
+}
+
+main{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  column-gap: 66px;
+  row-gap: 44px;
+  place-content: center;
+}
+
+
+.card{
+  background-color: #202024;
+  width: 340px;
+  margin-bottom: 5px;
+  border-radius: 8px;
+  border: 2px solid #323238;
+  overflow:hidden ;
+  box-shadow: 5px 5px 15px 1px rgb(0, 0, 0);
+  
+}
+
+img{
+  width: 100%;
+}
+
+.card h1{
+  padding: 5px 32px 10px;
+  font-size: 35px;
+}
+
+.card p {
+  padding: 0 32px 32px 32px;
+  font-size: 20px;
+}
+
+
+@media (max-width: 1150px) {
+  main{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 56px;
+    row-gap: 24px;
+    place-items: center;
+  }
+  header{
+    text-align: center;
+  }
+}
+
+
+@media (max-width: 840px) {
+  main{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    column-gap: 46px;
+    row-gap: 14px;
+    place-items: center;
+  }
+  header{
+    text-align: center;
+  }
+}
+
